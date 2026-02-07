@@ -177,10 +177,22 @@
             pointer-events: none;
         }
 
+        .message-text {
+            color: #bbb;
+            line-height: 1.6;
+            font-size: 1rem;
+            margin: 15px 0;
+        }
+
         /* Mobile Optimization */
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
+            }
+
+            .message-text {
+                font-size: 0.85rem;
+                line-height: 1.5;
             }
 
             .floral-text {
@@ -238,11 +250,11 @@
                 <div class="stat">ORIGIN: <span class="val">UoM</span></div>
                 <div class="stat">DESTINATION: <span class="val">IIT</span></div>
             </div>
-            <p style="color: #bbb; line-height: 1.6;">
-                Calculated the terrain between UoM and IIT.<br>
-                The incline is steep, but with <strong>4x4 logic</strong>,<br>
-                every path leads straight to you.
-            </p>
+            <p class="message-text">
+                Back in our A/L classes, I had a crush on u that no one knew about.<br>
+                I didn't have the guts to engage the gears back then, and it was still very difficult to find the
+                guts.<br>
+                I really, really hope that u would say yes for this.
             </p>
             <div class="floral-text" id="question-msg"
                 style="margin-top: 30px; font-family: 'Playfair Display', serif;"></div>
